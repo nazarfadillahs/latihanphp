@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+.hero {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  height: 200px;
+}
+.hero::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-color: #000000c2;
+  position: absolute;
+  top: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #1dca1a;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  position: relative;
+  top: 80px;
+  z-index: 2;
+}
+
+form {
+  color: #fff;
+  font-family: "Century gothic";
+}
+
+form ul li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.input {
+  background-color: rgba(0, 0, 0, 0);
+  border: rgba(0, 0, 0, 0);
+  border-bottom: #19a72c solid 1.5px;
+  width: 90%;
+  height: 20px;
+  margin-top: 20px;
+  outline: none;
+  transition: 0.5s;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  color: rgba(185, 185, 185, 0.5);
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.button {
+  position: relative;
+  height: 40px;
+  width: 70px;
+  margin-top: 25px;
+  border: #19a72c solid 1px;
+  background-color: #00000000;
+  cursor: pointer;
+  margin-bottom: 50px;
+  transition: 0.5s;
+  color: #19a72c;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #19a72c;
+  color: #fff;
+  border-radius: 20px;
+}

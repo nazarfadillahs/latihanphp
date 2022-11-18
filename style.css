@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+.hero {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  height: 500px;
+}
+.hero::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 500px;
+  background-color: #000000c2;
+  position: absolute;
+  top: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #1dca1a;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  position: relative;
+  top: 150px;
+  z-index: 2;
+}
+
+.hero ul li {
+  list-style: none;
+}
+
+.hero a {
+  text-decoration: none;
+  color: #1dca1a;
+  text-align: center;
+  display: block;
+  border: 1px solid #1dca1a;
+  width: 200px;
+  margin: auto;
+  position: relative;
+  top: 180px;
+  z-index: 2;
+  font-family: "Century gothic";
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+  font-size: 11px;
+  transition: 0.5s;
+}
+
+.hero a:hover {
+  background-color: #1dca1a;
+  color: #ffffff;
+}
+
+table {
+  color: #ffffff;
+  margin: auto;
+  font-family: "Century gothic";
+  font-size: 15px;
+}
+
+table a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+}
+
+.ubah {
+  background-color: #1dca1a;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.ubah:hover {
+  background-color: #1a6f18;
+}
+
+.hapus {
+  background-color: #ca1a1a;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.hapus:hover {
+  background-color: #6f1818;
+}
+
+.jarak {
+  height: 50px;
+  width: 100%;
+}
